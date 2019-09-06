@@ -1,0 +1,22 @@
+<div class="app-mensajes" id="app-mensajes">
+    
+    <div class="text-right" *ngFor="let chat of chatService.chats">
+        <span class="badge badge-primary">Fulano</span>
+        <p>
+            {{chat.mensaje}}
+        </p>
+    </div>
+    <!-- <div>
+        <span class="badge badge-success">Maria</span>
+        <p>
+            Lorem ipsum dolor, sit amet consecfacilis tenetur accusantium quo.
+        </p>
+    </div> -->
+
+</div>
+<input type="text" name="mensaje" [(ngModel)]="mensaje" class="form-control" (keyup.enter)="enviarMensaje()"
+    placeholder="Enviar mensaje">
+    <button (click)="enviarMensaje()" class="btn btn btn-primary fa-pull-right mt-1" type="button">
+        <i class="fas fa-paper-plane"></i>
+    </button>
+
