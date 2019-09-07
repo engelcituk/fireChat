@@ -22,7 +22,7 @@ export class ChatComponent implements OnInit {
       });
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this.elemento = document.getElementById('app-mensajes');
   }
   enviarMensaje() {

@@ -16,12 +16,14 @@ import { FormsModule } from '@angular/forms';
 
 // servicios
 import { ChatService } from './providers/chat.service';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ChatComponent,
+    LoginComponent,
 
   ],
   imports: [
